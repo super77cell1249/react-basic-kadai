@@ -1,0 +1,73 @@
+/* 全体のスタイル設定 */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+/* 電卓アプリ全体の外枠 */
+.calculator-container {
+  display: inline-block;
+  background-color: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* タイトル */
+.calculator-container h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #1e293b;
+  font-size: 1.5rem;
+}
+
+/* 表示欄 */
+.calculator-display {
+  background-color: whitesmoke;
+  border: 1px solid #94a3b8;
+  min-height: 48px;
+  padding: 10px 14px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #0f172a;
+  box-sizing: border-box;
+  word-break: break-all;
+}
+
+/* ボタンのグリッドレイアウト設定 */
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  gap: 8px;
+  justify-content: center;
+}
+
+/* ボタン共通スタイル */
+.button-grid button {
+  height: 60px;
+  width: 60px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border: 1px solid #93c5fd;
+  border-radius: 8px;
+  background-color: #e0f2fe;
+  color: #0369a1;
+  cursor: pointer;
+  transition: background-color 0.15s ease, transform 0.05s ease;
+}
+
+/* ボタンホバー時・クリック時の変化 */
+.button-grid button:hover {
+  background-color: #bae6fd;
+}
+
+.button-grid button:active {
+  transform: scale(0.96);
+  background-color: #7dd3fc;
+}
